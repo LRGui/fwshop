@@ -1,0 +1,355 @@
+/* 重置样式 */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+a img {
+    border: none;
+}
+
+ul {
+    list-style: none;
+}
+
+input,
+button {
+    font-family: inherit;
+    font-size: inherit;
+    outline: none;
+}
+
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+button {
+    cursor: pointer;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: normal;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif;
+    font-size: 1.4rem;
+    color: #303030;
+}
+
+
+/* 响应式布局 */
+
+
+/*移动优先原则，默认就是手机端*/
+
+.container-fluid {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/*移动*/
+
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+
+/* 中等端 */
+
+@media screen and ( min-width:1024px) {
+    .container {
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+
+/* 大型端 */
+
+@media screen and ( min-width:1230px) {
+    .container {
+        width: 1200px;
+    }
+}
+
+
+/*栅格化布局*/
+
+
+/* 栅格布局规定
+xs 代表手机
+sm 代表平板
+md 代表中等
+lg 代表大型
+*/
+
+.row {
+    margin-left: -6px;
+    margin-right: -6px;
+}
+
+.row:after {
+    display: block;
+    content: " ";
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.row [class*="col-"] {
+    float: left;
+    padding-left: 6px;
+    padding-right: 6px;
+}
+
+
+/*去掉槽宽*/
+
+.not-gutter {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.not-gutter [class*="col-"] {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+/*手机端*/
+
+.row .col-1,
+.row .col-xs-1 {
+    width: 8.33333333%;
+}
+
+.row .col-2,
+.row .col-xs-2 {
+    width: 16.66666667%;
+}
+
+.row .col-3,
+.row .col-xs-3 {
+    width: 25%;
+}
+
+.row .col-4,
+.row .col-xs-4 {
+    width: 33.33333333%;
+}
+
+.row .col-5,
+.row .col-xs-5 {
+    width: 41.66666667%;
+}
+
+.row .col-6,
+.row .col-xs-6 {
+    width: 50%;
+}
+
+.row .col-7,
+.row .col-xs-7 {
+    width: 58.33333333%;
+}
+
+.row .col-8,
+.row .col-xs-8 {
+    width: 66.66666667%;
+}
+
+.row .col-9,
+.row .col-xs-9 {
+    width: 75%;
+}
+
+.row .col-10,
+.row .col-xs-10 {
+    width: 83.33333333%;
+}
+
+.row .col-11,
+.row .col-xs-11 {
+    width: 91.66666667%;
+}
+
+.row .col-12,
+.row .col-xs-12 {
+    width: 100%;
+}
+
+
+/*中等端*/
+
+@media screen and (min-width:1024px) {
+    .row .col-md-1 {
+        width: 8.33333333%;
+    }
+    .row .col-md-2 {
+        width: 16.66666667%;
+    }
+    .row .col-md-3 {
+        width: 25%;
+    }
+    .row .col-md-4 {
+        width: 33.33333333%;
+    }
+    .row .col-md-5 {
+        width: 41.66666667%;
+    }
+    .row .col-md-6 {
+        width: 50%;
+    }
+    .row .col-md-7 {
+        width: 58.33333333%;
+    }
+    .row .col-md-8 {
+        width: 66.66666667%;
+    }
+    .row .col-md-9 {
+        width: 75%;
+    }
+    .row .col-md-10 {
+        width: 83.33333333%;
+    }
+    .row .col-md-11 {
+        width: 91.66666667%;
+    }
+    .row .col-md-12 {
+        width: 100%;
+    }
+}
+
+
+/*大型端*/
+
+@media screen and (min-width:1230px) {
+    .row .col-lg-1 {
+        width: 8.33333333%;
+    }
+    .row .col-lg-2 {
+        width: 16.66666667%;
+    }
+    .row .col-lg-3 {
+        width: 25%;
+    }
+    .row .col-lg-4 {
+        width: 33.33333333%;
+    }
+    .row .col-lg-5 {
+        width: 41.66666667%;
+    }
+    .row .col-lg-6 {
+        width: 50%;
+    }
+    .row .col-lg-7 {
+        width: 58.33333333%;
+    }
+    .row .col-lg-8 {
+        width: 66.66666667%;
+    }
+    .row .col-lg-9 {
+        width: 75%;
+    }
+    .row .col-lg-10 {
+        width: 83.33333333%;
+    }
+    .row .col-lg-11 {
+        width: 91.66666667%;
+    }
+    .row .col-lg-12 {
+        width: 100%;
+    }
+}
+
+
+/* 响应式内容 */
+
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+/* 响应式表格 */
+
+.table-responsive {
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+
+
+/* 响应式多媒体 */
+
+.embed-responsive {
+    position: relative;
+    display: block;
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.embed-responsive iframe,
+.embed-responsive video,
+.embed-responsive canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+.embed-responsive-16by9 {
+    padding-bottom: 56.25%;
+}
+
+.embed-responsive-4by3 {
+    padding-bottom: 75%;
+}
+
+
+/*响应式工具*/
+
+.visible-xs {
+    display: block;
+}
+
+.visible-xs-inline-block {
+    display: inline-block;
+}
+
+@media screen and ( max-width: 1000px) {
+    .hidden-xs {
+        display: none !important;
+    }
+}
+
+@media screen and ( min-width: 1000px) {
+    .visible-xs,
+    .visible-xs-inline-block {
+        display: none !important;
+    }
+}
